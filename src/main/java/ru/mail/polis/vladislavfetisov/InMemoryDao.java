@@ -127,6 +127,7 @@ public class InMemoryDao implements Dao<MemorySegment, Entry<MemorySegment>> {
         if (mapFile == null) {
             return null;
         }
+
         return Utils.binarySearch(key, mapFile, mapIndex);
     }
 
